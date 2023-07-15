@@ -79,6 +79,20 @@
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         <meta name="theme-color" content="#ffffff" />
 
+        <!-- Link icon -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <link
+            rel="stylesheet"
+            href="./assets/fonts/themify-icons/themify-icons.css"
+        />
+
         <!-- Embed font -->
         <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
 
@@ -91,7 +105,7 @@
         <header class="header">
             <div class="container">
                 <!-- Header top -->
-                <div class="header__top">
+                <section class="header__top">
                     <!-- Navigation -->
                     <ul class="header__list">
                         <li class="header-item">
@@ -120,7 +134,83 @@
                             >
                         </li>
                     </ul>
-                </div>
+                </section>
+
+                <!-- Logo -->
+                <section class="header__logo">
+                    <img src="./assets/img/logo.png" alt="Eflyer" />
+                </section>
+
+                <!-- Header middle-->
+                <section class="header__middle__group">
+                    <div class="container">
+                        <div class="header__row">
+                            <!-- Menu -->
+                            <div class="header__menu">
+                                <img
+                                    src="./assets/img/toggle-icon.png"
+                                    alt=""
+                                />
+                            </div>
+
+                            <!-- Action -->
+                            <button class="cta header__cta" type="button">
+                                All Category
+                            </button>
+
+                            <!-- Group -->
+                            <div class="header__group">
+                                <input
+                                    class="header__group__text"
+                                    type="text"
+                                    name=""
+                                    id=""
+                                    placeholder="Search this blog"
+                                />
+                                <div class="header__group__icon">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </div>
+
+                            <!-- Group right -->
+                            <div class="header__right__group">
+                                <div class="header__language">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/flag-uk.png"
+                                            alt=""
+                                            class="header__language__img"
+                                        />
+                                        <span class="header__language__text">
+                                            English
+                                        </span>
+                                        <i
+                                            class="header__language__arrow ti-angle-down"
+                                        ></i>
+                                    </a>
+                                </div>
+                                <div class="header__login">
+                                    <div class="header__cart">
+                                        <i
+                                            class="header__login__icon fa-solid fa-cart-shopping"
+                                        ></i>
+                                        <span class="header__login__title"
+                                            >CART</span
+                                        >
+                                    </div>
+                                    <div class="header__user header__cart">
+                                        <i
+                                            class="header__login__icon fa-regular fa-user"
+                                        ></i>
+                                        <span class="header__login__title"
+                                            >CART</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </header>
     </body>
