@@ -22,6 +22,7 @@ a {
 
 .container {
     width: 960px;
+    max-width: calc(100% - 48px);
     margin-left: auto;
     margin-right: auto;
 }
@@ -42,11 +43,13 @@ a {
 }
 
 /* === Header === */
-.header {
-    width: 100%;
+.banner__main {
+    min-width: 100%;
     height: auto;
     background-repeat: no-repeat;
     background-image: url("../img/banner-bg.png");
+    background-size: cover;
+    background-position: center;
 }
 
 /* Header-top */
@@ -85,7 +88,8 @@ a {
 .header__row {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 30px;
+    justify-content: space-evenly;
 }
 
 .header__menu {
@@ -217,4 +221,75 @@ a {
     font-weight: 400;
     color: #fff;
     transition: 0.25s;
+}
+
+/* === Banner === */
+.banner {
+    /* position: relative; */
+    text-align: center;
+    padding: 100px 0 60px;
+}
+
+.banner__heading {
+    user-select: none;
+    padding-bottom: 10px;
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.6;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.banner__buy {
+    display: inline-block;
+    margin-top: 30px;
+    min-width: 170px;
+    line-height: 1.75;
+    border-radius: 5px;
+    color: rgb(250, 250, 250);
+    background-color: rgb(37, 37, 37);
+    padding: 11px 16px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    transition: 0.25s;
+}
+
+.banner__buy:hover {
+    opacity: 0.9;
+    background: #f26522;
+}
+
+.banner__controls {
+    position: relative;
+    transform: translateY(-500%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner__controls__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    opacity: 1;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    background: rgba(242, 222, 172, 0.8);
+    border-radius: 100px;
+    border: none;
+    transition: 0.3s;
+}
+
+.banner__controls__icon:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+.banner__arrow_next {
+    font-size: 1.4rem;
+    font-weight: 700;
 }
