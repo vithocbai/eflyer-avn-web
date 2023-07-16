@@ -27,6 +27,12 @@ a {
     margin-right: auto;
 }
 
+/* Logo */
+.logo {
+    padding: 30px 0;
+    text-align: center;
+}
+
 .cta {
     display: inline-block;
     min-width: 140px;
@@ -40,6 +46,42 @@ a {
     color: #ffffff;
     outline: none;
     border: none;
+}
+
+/* === Controls === */
+.controls__arrow {
+    padding: 55px 0 40px;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.control__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    background-color: rgb(48, 48, 46);
+    opacity: 1;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    transition: 0.25s;
+}
+
+.control__icon:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(242, 101, 34);
+}
+
+.control__img {
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+    font-weight: 900;
 }
 
 /* === Header === */
@@ -76,12 +118,6 @@ a {
 
 .header-item__link:hover {
     color: var(--primary-color);
-}
-
-/* Logo */
-.header__logo {
-    padding: 30px 0;
-    text-align: center;
 }
 
 /* Row */
@@ -295,9 +331,7 @@ a {
 }
 
 /* === Content === */
-.content {
-}
-
+/* Fashion */
 .content__heading {
     width: 100%;
     padding-bottom: 10px;
@@ -308,7 +342,7 @@ a {
     user-select: none;
 }
 
-.content__list__fashion {
+.content__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
