@@ -100,7 +100,7 @@
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
-    <body style="height: 5000px">
+    <body>
         <section class="banner__main">
             <!-- Header -->
             <header class="header">
@@ -138,7 +138,7 @@
                     </section>
 
                     <!-- Logo -->
-                    <section class="logo">
+                    <section class="header__logo">
                         <img src="./assets/img/logo.png" alt="Eflyer" />
                     </section>
 
@@ -502,5 +502,69 @@
                 <div class="cricle"></div>
             </div>
         </main>
+        <footer class="footer">
+            <div class="container">
+                <!-- logo -->
+                <a href="#!" class="footer__logo">
+                    <img src="./assets/img/logo.png" alt="" />
+                </a>
+
+                <!-- Form -->
+                <form
+                    method="post"
+                    autocomplete="off"
+                    action=""
+                    class="footer__form"
+                >
+                    <input
+                        class="footer__email"
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Your Email"
+                        required
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                    />
+                    <input
+                        class="footer__submit"
+                        type="submit"
+                        value="Subscribe"
+                    />
+                </form>
+
+                <!-- Navigation -->
+                <ul class="header__list footer__list">
+                    <li class="header-item">
+                        <a href="#!" class="header-item__link">Best Sellers</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="#!" class="header-item__link">Gift Ideas</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="#!" class="header-item__link">New Releases</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="#!" class="header-item__link">Today's Deals</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="#!" class="header-item__link"
+                            >Customer Service</a
+                        >
+                    </li>
+                </ul>
+
+                <p class="footer__phone">
+                    Help Line Number : <a href="#!"> +1 1800 1200 1200 </a>
+                </p>
+            </div>
+            <div class="footer__copyright">
+                <p class="footer__copyright__text">
+                    © 2020 All Rights Reserved. Design by
+                    <a href="https://html.design/" target="_blank"
+                        >Free html Templates</a
+                    >
+                </p>
+            </div>
+        </footer>
     </body>
 </html>
