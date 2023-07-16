@@ -145,9 +145,9 @@
                     <!-- Header middle-->
                     <section class="header__middle__group">
                         <div class="container">
-                            <div class="header__row">
-                                <!-- Menu -->
-                                <div class="header__menu">
+                            <div class="header__menu">
+                                <!-- Menu icon-->
+                                <div class="header__menu__icon">
                                     <img
                                         src="./assets/img/toggle-icon.png"
                                         alt=""
@@ -157,6 +157,23 @@
                                 <!-- Action -->
                                 <button class="cta header__cta" type="button">
                                     All Category
+                                    <ul class="sub__menu">
+                                        <li class="sub__menu__item">
+                                            <a class="sub__menu__link" href="#!"
+                                                >Action</a
+                                            >
+                                        </li>
+                                        <li class="sub__menu__item">
+                                            <a class="sub__menu__link" href="#!"
+                                                >Another action</a
+                                            >
+                                        </li>
+                                        <li class="sub__menu__item">
+                                            <a class="sub__menu__link" href="#!"
+                                                >Something else here</a
+                                            >
+                                        </li>
+                                    </ul>
                                 </button>
 
                                 <!-- Group -->
@@ -168,24 +185,24 @@
                                         id=""
                                         placeholder="Search this blog"
                                     />
-                                    <div class="header__group__icon">
+                                    <a href="#!" class="header__group__icon">
                                         <i
                                             class="fa-solid fa-magnifying-glass"
                                         ></i>
-                                    </div>
+                                    </a>
                                 </div>
 
                                 <!-- Group right -->
                                 <div class="header__right__group">
-                                    <div class="header__language">
+                                    <button class="header__language">
                                         <a href="#!">
                                             <img
                                                 src="./assets/img/flag-uk.png"
-                                                alt=""
+                                                alt="English"
                                                 class="header__language__img"
                                             />
                                             <span
-                                                class="header__language__text"
+                                                class="header__language__english"
                                             >
                                                 English
                                             </span>
@@ -193,7 +210,22 @@
                                                 class="header__language__arrow ti-angle-down"
                                             ></i>
                                         </a>
-                                    </div>
+                                        <a
+                                            href="#!"
+                                            class="header__languege__secondary"
+                                        >
+                                            <img
+                                                class="header__language__img header__language__frence"
+                                                src="./assets/img/flag-france.png"
+                                                alt="Frence"
+                                            />
+                                            <span
+                                                class="header__language_frence"
+                                            >
+                                                Frence
+                                            </span>
+                                        </a>
+                                    </button>
                                     <div class="header__login">
                                         <div class="header__cart">
                                             <i
@@ -502,6 +534,7 @@
                 <div class="cricle"></div>
             </div>
         </main>
+
         <footer class="footer">
             <div class="container">
                 <!-- logo -->
