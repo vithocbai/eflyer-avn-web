@@ -418,3 +418,8 @@ a {
     background-color: transparent;
     color: rgb(242, 101, 34);
 }
+
+/* === Electronic ===*/
+.electronic__thumb {
+    height: 277px;
+}
