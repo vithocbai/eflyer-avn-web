@@ -98,6 +98,8 @@
 
         <!-- Reset css -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
+
+        <!-- Style-->
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
     <body>
@@ -146,50 +148,112 @@
                     <section class="header__middle__group">
                         <div class="container">
                             <div class="header__menu">
-                                <!-- Menu icon-->
-                                <div class="header__menu__icon">
-                                    <img
-                                        src="./assets/img/toggle-icon.png"
-                                        alt=""
-                                    />
-                                </div>
+                                <div class="header__menu__seacrch">
+                                    <!-- Menu icon-->
+                                    <label
+                                        for="nav__pc__input"
+                                        class="nav__bars__btn"
+                                    >
+                                        <img
+                                            src="./assets/img/toggle-icon.png"
+                                            alt=""
+                                        />
+                                    </label>
 
-                                <!-- Action -->
-                                <button class="cta header__cta" type="button">
-                                    All Category
-                                    <ul class="sub__menu">
-                                        <li class="sub__menu__item">
-                                            <a class="sub__menu__link" href="#!"
-                                                >Action</a
-                                            >
-                                        </li>
-                                        <li class="sub__menu__item">
-                                            <a class="sub__menu__link" href="#!"
-                                                >Another action</a
-                                            >
-                                        </li>
-                                        <li class="sub__menu__item">
-                                            <a class="sub__menu__link" href="#!"
-                                                >Something else here</a
-                                            >
-                                        </li>
-                                    </ul>
-                                </button>
-
-                                <!-- Group -->
-                                <div class="header__group">
                                     <input
-                                        class="header__group__text"
-                                        type="text"
+                                        hidden
+                                        class="nav__input"
+                                        type="checkbox"
                                         name=""
-                                        id=""
-                                        placeholder="Search this blog"
+                                        id="nav__pc__input"
                                     />
-                                    <a href="#!" class="header__group__icon">
-                                        <i
-                                            class="fa-solid fa-magnifying-glass"
-                                        ></i>
-                                    </a>
+
+                                    <label
+                                        for="nav__pc__input"
+                                        class="nav__overlay"
+                                    ></label>
+
+                                    <div class="nav__pc">
+                                        <label
+                                            for="nav__pc__input"
+                                            class="nav__pc__close"
+                                        >
+                                            <i
+                                                class="nav__xmark fa-solid fa-xmark"
+                                            ></i>
+                                        </label>
+                                        <ul class="nav__list">
+                                            <li>
+                                                <a href="#!" class="nav__link"
+                                                    >Home</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="#!" class="nav__link"
+                                                    >Fashion</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="#!" class="nav__link"
+                                                    >Electronic</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="#!" class="nav__link"
+                                                    >Jewellery</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- Action -->
+                                    <button
+                                        class="cta header__cta"
+                                        type="button"
+                                    >
+                                        All Category
+                                        <ul class="sub__menu">
+                                            <li class="sub__menu__item">
+                                                <a
+                                                    class="sub__menu__link"
+                                                    href="#!"
+                                                    >Action</a
+                                                >
+                                            </li>
+                                            <li class="sub__menu__item">
+                                                <a
+                                                    class="sub__menu__link"
+                                                    href="#!"
+                                                    >Another action</a
+                                                >
+                                            </li>
+                                            <li class="sub__menu__item">
+                                                <a
+                                                    class="sub__menu__link"
+                                                    href="#!"
+                                                    >Something else here</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </button>
+
+                                    <!-- Group -->
+                                    <div class="header__group">
+                                        <input
+                                            class="header__group__text"
+                                            type="text"
+                                            name=""
+                                            id=""
+                                            placeholder="Search this blog"
+                                        />
+                                        <a
+                                            href="#!"
+                                            class="header__group__icon"
+                                        >
+                                            <i
+                                                class="fa-solid fa-magnifying-glass"
+                                            ></i>
+                                        </a>
+                                    </div>
                                 </div>
 
                                 <!-- Group right -->
@@ -215,7 +279,7 @@
                                             class="header__languege__secondary"
                                         >
                                             <img
-                                                class="header__language__img header__language__frence"
+                                                class="header__language__img"
                                                 src="./assets/img/flag-france.png"
                                                 alt="Frence"
                                             />
@@ -536,59 +600,69 @@
         </main>
 
         <footer class="footer">
-            <div class="container">
-                <!-- logo -->
-                <a href="#!" class="footer__logo">
-                    <img src="./assets/img/logo.png" alt="" />
-                </a>
+            <div class="footer__inner">
+                <div class="container">
+                    <!-- logo -->
+                    <a href="#!" class="footer__logo">
+                        <img src="./assets/img/logo.png" alt="" />
+                    </a>
 
-                <!-- Form -->
-                <form
-                    method="post"
-                    autocomplete="off"
-                    action=""
-                    class="footer__form"
-                >
-                    <input
-                        class="footer__email"
-                        type="email"
-                        name="email"
-                        id="email"
-                        placeholder="Your Email"
-                        required
-                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                    />
-                    <input
-                        class="footer__submit"
-                        type="submit"
-                        value="Subscribe"
-                    />
-                </form>
+                    <!-- Form -->
+                    <form
+                        method="post"
+                        autocomplete="off"
+                        action=""
+                        class="footer__form"
+                    >
+                        <input
+                            class="footer__email"
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Your Email"
+                            required
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                        />
+                        <input
+                            class="footer__submit"
+                            type="submit"
+                            value="Subscribe"
+                        />
+                    </form>
 
-                <!-- Navigation -->
-                <ul class="header__list footer__list">
-                    <li class="header-item">
-                        <a href="#!" class="header-item__link">Best Sellers</a>
-                    </li>
-                    <li class="header-item">
-                        <a href="#!" class="header-item__link">Gift Ideas</a>
-                    </li>
-                    <li class="header-item">
-                        <a href="#!" class="header-item__link">New Releases</a>
-                    </li>
-                    <li class="header-item">
-                        <a href="#!" class="header-item__link">Today's Deals</a>
-                    </li>
-                    <li class="header-item">
-                        <a href="#!" class="header-item__link"
-                            >Customer Service</a
-                        >
-                    </li>
-                </ul>
+                    <!-- Navigation -->
+                    <ul class="header__list footer__list">
+                        <li class="header-item">
+                            <a href="#!" class="header-item__link"
+                                >Best Sellers</a
+                            >
+                        </li>
+                        <li class="header-item">
+                            <a href="#!" class="header-item__link"
+                                >Gift Ideas</a
+                            >
+                        </li>
+                        <li class="header-item">
+                            <a href="#!" class="header-item__link"
+                                >New Releases</a
+                            >
+                        </li>
+                        <li class="header-item">
+                            <a href="#!" class="header-item__link"
+                                >Today's Deals</a
+                            >
+                        </li>
+                        <li class="header-item">
+                            <a href="#!" class="header-item__link"
+                                >Customer Service</a
+                            >
+                        </li>
+                    </ul>
 
-                <p class="footer__phone">
-                    Help Line Number : <a href="#!"> +1 1800 1200 1200 </a>
-                </p>
+                    <p class="footer__phone">
+                        Help Line Number : <a href="#!"> +1 1800 1200 1200 </a>
+                    </p>
+                </div>
             </div>
             <div class="footer__copyright">
                 <p class="footer__copyright__text">
