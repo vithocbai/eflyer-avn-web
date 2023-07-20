@@ -25,7 +25,7 @@
 
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    .banner__heading {
+    .slide__heading {
         font-size: 5rem;
     }
 
@@ -38,7 +38,7 @@
     }
 
     .electronic__thumb {
-        height: 180px;
+        height: 190px;
     }
 
     .accessories__thumb {
@@ -62,23 +62,42 @@
         flex-direction: column-reverse;
     }
 
-    .header__menu__seacrch {
-        gap: 20px;
+    .header__left__group {
+        gap: 0;
     }
 
-    .header__group__text {
-        width: 100%;
+    .header__group {
+        margin: 0 0 2px 10px;
+    }
+
+    .header__menu__seacrch {
+        gap: 20px;
     }
 
     .header__right__group {
         display: flex;
         justify-content: space-between;
+        width: 100%;
     }
 
-    .header__right__text {
+    .header__language {
+        background: none;
+        padding: 0;
+        justify-content: flex-start;
     }
 
-    .banner__heading,
+    .header__language__english,
+    .header__language__arrow {
+        color: #fff;
+        font-weight: 500;
+    }
+
+    .header__login__title,
+    .header__login__icon {
+        font-size: 1.4rem;
+    }
+
+    .slide__heading,
     .content__heading {
         font-size: 2.4rem;
     }
@@ -87,8 +106,14 @@
         display: block;
     }
 
+    .slide__controls__left,
+    .slide__controls__right {
+        top: -10px;
+    }
+
     .controls__arrow {
-        max-width: 80%;
+        gap: 0;
+        justify-content: space-between;
     }
 
     .footer__form {

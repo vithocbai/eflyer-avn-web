@@ -14,7 +14,6 @@ body {
     font-family: Poppins, "sans-serif";
     font-size: 1.6rem;
 }
-
 /* Common */
 a {
     text-decoration: none !important;
@@ -45,13 +44,15 @@ a {
 
 /* === Controls === */
 .controls__arrow {
+    position: relative;
+    width: 100%;
     padding: 55px 0 40px;
-    max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 330px;
 }
 
 .control__icon {
@@ -91,6 +92,7 @@ a {
 
 /* Header-top */
 .header__top {
+    margin: 0 auto;
     padding: 10px 0;
     background-color: #2b2a29;
     clip-path: polygon(0 0, 100% 0, 96% 100%, 3% 100%);
@@ -105,7 +107,7 @@ a {
 
 .header-item__link {
     display: inline-block;
-    padding: 6px 12px;
+    padding: 6px 12px 4px;
     font-size: 16px;
     color: #f1f1f1;
     transition: 0.4s;
@@ -125,8 +127,9 @@ a {
 .header__menu {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 30px;
-    justify-content: space-evenly;
+    margin: 0 -24px;
 }
 
 .header__menu__seacrch {
@@ -278,12 +281,21 @@ a {
     padding: 4px 24px;
 }
 
+.header__left__group {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
 .header__group {
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .header__group__text {
+    width: 100%;
     height: 38px;
     font-size: 1.8rem;
     line-height: 1.5;
@@ -309,19 +321,17 @@ a {
     justify-content: center;
     width: 45px;
     height: 38px;
+    margin-left: -1px;
     color: #fff;
     background-color: var(--primary-color);
     border-color: var(--primary-color);
     border: transparent;
-    margin-left: -2px;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
 }
 
 .header__group__icon:focus {
-    z-index: 1;
-    box-shadow: rgba(255, 255, 255, 0.25) 0px 0px 0px 0.2rem;
-    border-color: rgb(255, 255, 255) !important;
+    box-shadow: rgba(108, 117, 125, 0.5) 0px 0px 0px 0.2rem;
 }
 
 .header__group__icon:hover {
@@ -402,7 +412,7 @@ a {
 .header__login {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 .header__cart,
@@ -429,14 +439,41 @@ a {
     transition: 0.25s;
 }
 
-/* === Banner === */
-.banner {
-    /* position: relative; */
+/* === slide === */
+
+.slide__show {
     text-align: center;
-    padding: 100px 0 30px;
+    padding: 90px 0 30px;
 }
 
-.banner__heading {
+.slide__list {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.slide__item {
+    width: 100%;
+    flex-shrink: 0;
+    display: none;
+    transition: opacity 0.25s ease-in-out;
+    animation: fadeAnimation 1.5s ease-in-out forwards;
+}
+
+.slide__item:first-child {
+    display: block;
+}
+
+@keyframes fadeAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.slide__heading {
     user-select: none;
     padding-bottom: 10px;
     font-size: 6rem;
@@ -448,7 +485,7 @@ a {
     font-weight: bold;
 }
 
-.banner__buy {
+.slide__buy {
     display: inline-block;
     margin-top: 30px;
     min-width: 170px;
@@ -462,20 +499,13 @@ a {
     transition: 0.25s;
 }
 
-.banner__buy:hover {
+.slide__buy:hover {
     opacity: 0.9;
     background: #f26522;
 }
 
-.banner__controls {
-    position: relative;
-    transform: translateY(-500%);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.banner__controls__icon {
+.slide__controls__icon {
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -488,14 +518,24 @@ a {
     border-radius: 100px;
     border: none;
     transition: 0.3s;
+    z-index: 1;
 }
 
-.banner__controls__icon:hover {
+.slide__controls__left {
+    top: 40px;
+    left: 0;
+}
+
+.slide__controls__right {
+    top: 40px;
+    right: 0;
+}
+.slide__controls__icon:hover {
     cursor: pointer;
     color: #fff;
 }
 
-.banner__arrow_next {
+.slide__arrow_next {
     font-size: 1.4rem;
     font-weight: 700;
 }
